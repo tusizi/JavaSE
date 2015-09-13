@@ -8,10 +8,11 @@ public class CalcStringCount {
         int upper = 0;
         int lower = 0;
         int other = 0;
-        for (int i = 0; i <= chars.length - 1; i++) {
-            if (chars[i] < 91 && chars[i] > 64) {
+
+        for (char c : chars) {
+            if (c < 91 && c > 64) {
                 upper += 1;
-            } else if (chars[i] <= 122 && chars[i] >= 97) {
+            } else if (c <= 122 && c >= 97) {
                 lower += 1;
             } else {
                 other += 1;
